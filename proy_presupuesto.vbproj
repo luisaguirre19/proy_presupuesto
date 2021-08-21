@@ -47,6 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -70,34 +73,26 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuditoriaAutori.Designer.vb">
-      <DependentUpon>AuditoriaAutori.vb</DependentUpon>
+    <Compile Include="Clases\cls_eventos.vb" />
+    <Compile Include="Clases\cls_utilidades.vb" />
+    <Compile Include="Clases\MD_CONEXION.vb" />
+    <Compile Include="frm_crea_usuario.Designer.vb">
+      <DependentUpon>frm_crea_usuario.vb</DependentUpon>
     </Compile>
-    <Compile Include="AuditoriaAutori.vb">
+    <Compile Include="frm_crea_usuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ingresoPresupuesto.Designer.vb">
-      <DependentUpon>ingresoPresupuesto.vb</DependentUpon>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
     </Compile>
-    <Compile Include="ingresoPresupuesto.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="jsegura.Designer.vb">
-      <DependentUpon>jsegura.vb</DependentUpon>
-    </Compile>
-    <Compile Include="jsegura.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="luis.Designer.vb">
-      <DependentUpon>luis.vb</DependentUpon>
-    </Compile>
-    <Compile Include="luis.vb">
+    <Compile Include="frm_login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -111,11 +106,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ingresoPresupuesto.resx">
-      <DependentUpon>ingresoPresupuesto.vb</DependentUpon>
+    <EmbeddedResource Include="frm_crea_usuario.resx">
+      <DependentUpon>frm_crea_usuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="jsegura.resx">
-      <DependentUpon>jsegura.vb</DependentUpon>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -134,6 +129,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
