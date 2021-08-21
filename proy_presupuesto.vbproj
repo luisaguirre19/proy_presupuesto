@@ -70,17 +70,19 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="Clases\cls_eventos.vb" />
+    <Compile Include="Clases\cls_utilidades.vb" />
+    <Compile Include="Clases\MD_CONEXION.vb" />
+    <Compile Include="frm_crea_usuario.Designer.vb">
+      <DependentUpon>frm_crea_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crea_usuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
+    <Compile Include="frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
     </Compile>
-    <Compile Include="luis.Designer.vb">
-      <DependentUpon>luis.vb</DependentUpon>
-    </Compile>
-    <Compile Include="luis.vb">
+    <Compile Include="frm_login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -100,6 +102,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_crea_usuario.resx">
+      <DependentUpon>frm_crea_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
