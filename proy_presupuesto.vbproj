@@ -108,6 +108,9 @@
     <EmbeddedResource Include="ingresoPresupuesto.resx">
       <DependentUpon>ingresoPresupuesto.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="jsegura.resx">
+      <DependentUpon>jsegura.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
