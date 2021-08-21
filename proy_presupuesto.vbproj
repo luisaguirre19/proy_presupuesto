@@ -73,6 +73,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditoriaAutori.Designer.vb">
+      <DependentUpon>AuditoriaAutori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditoriaAutori.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Clases\cls_eventos.vb" />
     <Compile Include="Clases\cls_utilidades.vb" />
     <Compile Include="Clases\MD_CONEXION.vb" />
@@ -86,6 +92,18 @@
       <DependentUpon>frm_login.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ingresoPresupuesto.Designer.vb">
+      <DependentUpon>ingresoPresupuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ingresoPresupuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="jsegura.Designer.vb">
+      <DependentUpon>jsegura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jsegura.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -111,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ingresoPresupuesto.resx">
+      <DependentUpon>ingresoPresupuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="jsegura.resx">
+      <DependentUpon>jsegura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
