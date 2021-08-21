@@ -70,10 +70,10 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AuditoriaAutorizacion5.Designer.vb">
-      <DependentUpon>AuditoriaAutorizacion5.vb</DependentUpon>
+    <Compile Include="AudiAutorizacion1.Designer.vb">
+      <DependentUpon>AudiAutorizacion1.vb</DependentUpon>
     </Compile>
-    <Compile Include="AuditoriaAutorizacion5.vb">
+    <Compile Include="AudiAutorizacion1.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.vb">
