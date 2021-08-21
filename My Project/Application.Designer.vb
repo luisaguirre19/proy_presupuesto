@@ -30,9 +30,6 @@ Namespace My
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
 
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
-        Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.proy_presupuesto.Form1
-        End Sub
+
     End Class
 End Namespace
