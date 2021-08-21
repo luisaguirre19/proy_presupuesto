@@ -76,6 +76,12 @@
     <Compile Include="ingresoPresupuesto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="jsegura.Designer.vb">
+      <DependentUpon>jsegura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="jsegura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="luis.Designer.vb">
       <DependentUpon>luis.vb</DependentUpon>
     </Compile>
