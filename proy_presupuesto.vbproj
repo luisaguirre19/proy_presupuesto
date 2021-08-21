@@ -70,6 +70,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuditoriaAutori.Designer.vb">
+      <DependentUpon>AuditoriaAutori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditoriaAutori.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ingresoPresupuesto.Designer.vb">
       <DependentUpon>ingresoPresupuesto.vb</DependentUpon>
     </Compile>
