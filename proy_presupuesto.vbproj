@@ -79,6 +79,12 @@
     <Compile Include="AuditoriaAutori.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="autorizacionPres.Designer.vb">
+      <DependentUpon>autorizacionPres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="autorizacionPres.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Clases\cls_eventos.vb" />
     <Compile Include="Clases\cls_utilidades.vb" />
     <Compile Include="Clases\MD_CONEXION.vb" />
