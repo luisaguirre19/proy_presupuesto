@@ -8,15 +8,19 @@
             Me.Dispose()
         End If
 
+        func.envio_sp("@operacion", Trim("S"))
+        func.envio_sp("@suboperacion", Trim("L"))
         func.envio_sp("@mail", Trim(txt_correo.Text))
         func.envio_sp("@pass", Trim(txt_password.Text))
 
         dt = func.mapeatabla()
+        func.con_close()
         If dt.Rows.Count > 0 Then
-            If dt.Rows(0)(0) = 1 Then
-                MsgBox("Si")
+            If dt.Rows(0)(0) = 2 Then
+                frm_crea_usuario.ShowDialog()
+                Me.Close()
             Else
-                MsgBox("No")
+                MsgBox("usuarios no tiene autorizacion")
             End If
         Else
             MsgBox("nada")

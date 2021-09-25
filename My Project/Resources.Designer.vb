@@ -61,7 +61,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a Server=tcp:serv-cq.database.windows.net,1433;Initial Catalog=db_presupuesto;Persist Security Info=False;User ID=login_presupuesto;Password=Guate/2021;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;.
+        '''  Busca una cadena traducida similar a Server=tcp:serv-db-cq.database.windows.net,1433;Initial Catalog=db_cq;Persist Security Info=False;User ID=luisaguirre;Password=Ladrillo/43;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;.
         '''</summary>
         Friend ReadOnly Property conexion() As String
             Get

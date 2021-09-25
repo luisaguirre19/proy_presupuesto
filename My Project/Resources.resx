@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="conexion" xml:space="preserve">
-    <value>Server=tcp:serv-cq.database.windows.net,1433;Initial Catalog=db_presupuesto;Persist Security Info=False;User ID=login_presupuesto;Password=Guate/2021;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</value>
+    <value>Server=tcp:serv-db-cq.database.windows.net,1433;Initial Catalog=db_cq;Persist Security Info=False;User ID=luisaguirre;Password=Ladrillo/43;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</value>
   </data>
 </root>

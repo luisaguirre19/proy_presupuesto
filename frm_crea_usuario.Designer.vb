@@ -22,23 +22,28 @@ Partial Class frm_crea_usuario
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txt_conf_pass = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txt_pass = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_correo = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_apellido = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -46,44 +51,102 @@ Partial Class frm_crea_usuario
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'TabControl1
+        '
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Location = New System.Drawing.Point(-1, 0)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(768, 306)
+        Me.TabControl1.TabIndex = 1
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.SplitContainer1)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(760, 280)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Autorizar"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(760, 280)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "usuarios"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer1.Location = New System.Drawing.Point(3, 3)
         Me.SplitContainer1.Name = "SplitContainer1"
         Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
         '
         'SplitContainer1.Panel1
         '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.ComboBox1)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Button3)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Button2)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Button1)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.TextBox6)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.txt_conf_pass)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label6)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.TextBox5)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.txt_pass)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label5)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.TextBox4)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label4)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.TextBox3)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.txt_correo)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label3)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.TextBox2)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.txt_apellido)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label2)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label1)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.TextBox1)
+        Me.SplitContainer1.Panel1.Controls.Add(Me.txt_nombre)
         '
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.DataGridView1)
-        Me.SplitContainer1.Size = New System.Drawing.Size(768, 307)
-        Me.SplitContainer1.SplitterDistance = 79
-        Me.SplitContainer1.TabIndex = 0
+        Me.SplitContainer1.Size = New System.Drawing.Size(754, 274)
+        Me.SplitContainer1.SplitterDistance = 70
+        Me.SplitContainer1.TabIndex = 2
         '
-        'TextBox6
+        'Button3
         '
-        Me.TextBox6.Location = New System.Drawing.Point(342, 50)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 23
+        Me.Button3.Location = New System.Drawing.Point(473, 38)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(113, 23)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Eliminar usuario"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(618, 9)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(113, 23)
+        Me.Button2.TabIndex = 25
+        Me.Button2.Text = "Modificar usuario"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(473, 9)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(113, 23)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Agregar usuario"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txt_conf_pass
+        '
+        Me.txt_conf_pass.Location = New System.Drawing.Point(342, 50)
+        Me.txt_conf_pass.Name = "txt_conf_pass"
+        Me.txt_conf_pass.Size = New System.Drawing.Size(100, 20)
+        Me.txt_conf_pass.TabIndex = 6
         '
         'Label6
         '
@@ -94,12 +157,14 @@ Partial Class frm_crea_usuario
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "Confirma password:"
         '
-        'TextBox5
+        'txt_pass
         '
-        Me.TextBox5.Location = New System.Drawing.Point(342, 28)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 21
+        Me.txt_pass.Location = New System.Drawing.Point(342, 28)
+        Me.txt_pass.Name = "txt_pass"
+        Me.txt_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_pass.Size = New System.Drawing.Size(100, 20)
+        Me.txt_pass.TabIndex = 5
+        Me.txt_pass.UseSystemPasswordChar = True
         '
         'Label5
         '
@@ -110,13 +175,6 @@ Partial Class frm_crea_usuario
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "Password:"
         '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(342, 6)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 19
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -126,12 +184,12 @@ Partial Class frm_crea_usuario
         Me.Label4.TabIndex = 18
         Me.Label4.Text = "Rol:"
         '
-        'TextBox3
+        'txt_correo
         '
-        Me.TextBox3.Location = New System.Drawing.Point(114, 49)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 17
+        Me.txt_correo.Location = New System.Drawing.Point(114, 49)
+        Me.txt_correo.Name = "txt_correo"
+        Me.txt_correo.Size = New System.Drawing.Size(100, 20)
+        Me.txt_correo.TabIndex = 3
         '
         'Label3
         '
@@ -142,12 +200,12 @@ Partial Class frm_crea_usuario
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Correo:"
         '
-        'TextBox2
+        'txt_apellido
         '
-        Me.TextBox2.Location = New System.Drawing.Point(114, 26)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 15
+        Me.txt_apellido.Location = New System.Drawing.Point(114, 26)
+        Me.txt_apellido.Name = "txt_apellido"
+        Me.txt_apellido.Size = New System.Drawing.Size(100, 20)
+        Me.txt_apellido.TabIndex = 2
         '
         'Label2
         '
@@ -167,12 +225,12 @@ Partial Class frm_crea_usuario
         Me.Label1.TabIndex = 13
         Me.Label1.Text = "Nombre:"
         '
-        'TextBox1
+        'txt_nombre
         '
-        Me.TextBox1.Location = New System.Drawing.Point(114, 3)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 12
+        Me.txt_nombre.Location = New System.Drawing.Point(114, 3)
+        Me.txt_nombre.Name = "txt_nombre"
+        Me.txt_nombre.Size = New System.Drawing.Size(100, 20)
+        Me.txt_nombre.TabIndex = 1
         '
         'DataGridView1
         '
@@ -180,46 +238,33 @@ Partial Class frm_crea_usuario
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(768, 224)
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.RowTemplate.ReadOnly = True
+        Me.DataGridView1.ShowEditingIcon = False
+        Me.DataGridView1.Size = New System.Drawing.Size(754, 200)
         Me.DataGridView1.TabIndex = 0
         '
-        'Button1
+        'ComboBox1
         '
-        Me.Button1.Location = New System.Drawing.Point(473, 9)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(113, 23)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "Agregar usuario"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(618, 9)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(113, 23)
-        Me.Button2.TabIndex = 25
-        Me.Button2.Text = "Modificar usuario"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(473, 38)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 23)
-        Me.Button3.TabIndex = 26
-        Me.Button3.Text = "Eliminar usuario"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Contabilidad", "Finanzas", "Gerencia", "Auditoria"})
+        Me.ComboBox1.Location = New System.Drawing.Point(342, 3)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 26
         '
         'frm_crea_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(768, 307)
-        Me.Controls.Add(Me.SplitContainer1)
+        Me.Controls.Add(Me.TabControl1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frm_crea_usuario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Creacion de usuarios"
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.PerformLayout()
         Me.SplitContainer1.Panel2.ResumeLayout(False)
@@ -230,21 +275,24 @@ Partial Class frm_crea_usuario
 
     End Sub
 
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents txt_conf_pass As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txt_pass As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txt_correo As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_apellido As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_nombre As TextBox
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
