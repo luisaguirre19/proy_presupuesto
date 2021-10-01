@@ -16,8 +16,12 @@
         dt = func.mapeatabla()
         func.con_close()
         If dt.Rows.Count > 0 Then
+            func.usuario = (dt.Rows(0)(1).ToString)
             If dt.Rows(0)(0) = 2 Then
                 frm_crea_usuario.ShowDialog()
+                Me.Close()
+            ElseIf dt.Rows(0)(0) = 0 Then
+                ingresoPresupuesto.ShowDialog()
                 Me.Close()
             Else
                 MsgBox("usuarios no tiene autorizacion")

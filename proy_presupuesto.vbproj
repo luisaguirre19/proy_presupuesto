@@ -127,6 +127,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="autorizacionPres.resx">
+      <DependentUpon>autorizacionPres.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_crea_usuario.resx">
       <DependentUpon>frm_crea_usuario.vb</DependentUpon>
     </EmbeddedResource>

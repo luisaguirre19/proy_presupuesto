@@ -23,11 +23,13 @@ Partial Class frm_crea_usuario
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.txt_conf_pass = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -41,8 +43,13 @@ Partial Class frm_crea_usuario
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_nombre = New System.Windows.Forms.TextBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer2.Panel1.SuspendLayout()
+        Me.SplitContainer2.Panel2.SuspendLayout()
+        Me.SplitContainer2.SuspendLayout()
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -53,13 +60,65 @@ Partial Class frm_crea_usuario
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Location = New System.Drawing.Point(-1, 0)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Location = New System.Drawing.Point(-1, -2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(768, 306)
         Me.TabControl1.TabIndex = 1
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Controls.Add(Me.SplitContainer2)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(760, 280)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "autorizar"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'SplitContainer2
+        '
+        Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer2.Location = New System.Drawing.Point(3, 3)
+        Me.SplitContainer2.Name = "SplitContainer2"
+        Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
+        '
+        'SplitContainer2.Panel1
+        '
+        Me.SplitContainer2.Panel1.Controls.Add(Me.Label7)
+        '
+        'SplitContainer2.Panel2
+        '
+        Me.SplitContainer2.Panel2.Controls.Add(Me.DataGridView2)
+        Me.SplitContainer2.Size = New System.Drawing.Size(754, 274)
+        Me.SplitContainer2.SplitterDistance = 27
+        Me.SplitContainer2.TabIndex = 0
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(4, 4)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(253, 13)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "No se encontraron registros pendientes de autorizar."
+        '
+        'DataGridView2
+        '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AllowUserToDeleteRows = False
+        Me.DataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
+        Me.DataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
+        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DataGridView2.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView2.Name = "DataGridView2"
+        Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.Size = New System.Drawing.Size(754, 243)
+        Me.DataGridView2.TabIndex = 0
         '
         'TabPage1
         '
@@ -69,18 +128,8 @@ Partial Class frm_crea_usuario
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(760, 280)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Autorizar"
+        Me.TabPage1.Text = "Usuario"
         Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'TabPage2
-        '
-        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(760, 280)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "usuarios"
-        Me.TabPage2.UseVisualStyleBackColor = True
         '
         'SplitContainer1
         '
@@ -92,8 +141,6 @@ Partial Class frm_crea_usuario
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.ComboBox1)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.Button3)
-        Me.SplitContainer1.Panel1.Controls.Add(Me.Button2)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Button1)
         Me.SplitContainer1.Panel1.Controls.Add(Me.txt_conf_pass)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Label6)
@@ -114,27 +161,18 @@ Partial Class frm_crea_usuario
         Me.SplitContainer1.SplitterDistance = 70
         Me.SplitContainer1.TabIndex = 2
         '
-        'Button3
+        'ComboBox1
         '
-        Me.Button3.Location = New System.Drawing.Point(473, 38)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 23)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Eliminar usuario"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(618, 9)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(113, 23)
-        Me.Button2.TabIndex = 25
-        Me.Button2.Text = "Modificar usuario"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Contabilidad", "Finanzas", "Gerencia", "Auditoria"})
+        Me.ComboBox1.Location = New System.Drawing.Point(342, 3)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 26
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(473, 9)
+        Me.Button1.Location = New System.Drawing.Point(475, 19)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(113, 23)
         Me.Button1.TabIndex = 7
@@ -244,15 +282,6 @@ Partial Class frm_crea_usuario
         Me.DataGridView1.Size = New System.Drawing.Size(754, 200)
         Me.DataGridView1.TabIndex = 0
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Contabilidad", "Finanzas", "Gerencia", "Auditoria"})
-        Me.ComboBox1.Location = New System.Drawing.Point(342, 3)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 26
-        '
         'frm_crea_usuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -264,6 +293,13 @@ Partial Class frm_crea_usuario
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Creacion de usuarios"
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
+        Me.SplitContainer2.Panel1.ResumeLayout(False)
+        Me.SplitContainer2.Panel1.PerformLayout()
+        Me.SplitContainer2.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer2.ResumeLayout(False)
+        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.ResumeLayout(False)
         Me.SplitContainer1.Panel1.PerformLayout()
@@ -278,8 +314,6 @@ Partial Class frm_crea_usuario
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents SplitContainer1 As SplitContainer
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents txt_conf_pass As TextBox
     Friend WithEvents Label6 As Label
@@ -295,4 +329,7 @@ Partial Class frm_crea_usuario
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents SplitContainer2 As SplitContainer
+    Friend WithEvents Label7 As Label
+    Friend WithEvents DataGridView2 As DataGridView
 End Class

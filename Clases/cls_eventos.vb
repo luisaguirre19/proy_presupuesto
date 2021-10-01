@@ -1,6 +1,6 @@
 ﻿Public Class cls_eventos
     Dim dat As New DataTable
-
+    Public usuario As String
     ''' <summary>
     ''' AGREGACIÓN DE PARÁMETROS PARA LA EJECUCIÓN DEL SP
     ''' </summary>
