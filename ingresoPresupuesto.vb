@@ -18,7 +18,7 @@
         func.envio_sp("@monto", Trim(CDec(monto.Text)))
         func.envio_sp("@area", Trim(area_presupuesto.Text))
         func.envio_sp("@descripcion", Trim(desc_presupuesto.Text))
-        func.envio_sp("@nombre", (func.usuario))
+        func.envio_sp("@nombre", (user))
 
         dt = Func.mapeatabla()
         func.con_close()

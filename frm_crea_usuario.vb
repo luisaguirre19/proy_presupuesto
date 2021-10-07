@@ -96,6 +96,7 @@
         frm.monto = DataGridView2.CurrentRow.Cells(1).Value.ToString
         frm.area = DataGridView2.CurrentRow.Cells(2).Value.ToString
         frm.detalle_desc = DataGridView2.CurrentRow.Cells(3).Value.ToString
+        frm.estado_presup = DataGridView2.CurrentRow.Cells(5).Value.ToString
         frm.fecha = DataGridView2.CurrentRow.Cells(4).Value.ToString
         frm.usuario = DataGridView2.CurrentRow.Cells(6).Value.ToString
         frm.ShowDialog()
@@ -112,6 +113,8 @@
             func.envio_sp("@id", DataGridView2.CurrentRow.Cells(0).Value.ToString)
             func.envio_sp("@estado", frm.estado)
             func.envio_sp("@descripcion", frm.descripcion)
+            func.envio_sp("@nombre", user)
+
 
             func.transmitir_sp()
             func.con_close()

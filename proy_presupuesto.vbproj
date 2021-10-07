@@ -85,6 +85,7 @@
     <Compile Include="Clases\cls_eventos.vb" />
     <Compile Include="Clases\cls_utilidades.vb" />
     <Compile Include="Clases\MD_CONEXION.vb" />
+    <Compile Include="Clases\MD_general.vb" />
     <Compile Include="frm_crea_usuario.Designer.vb">
       <DependentUpon>frm_crea_usuario.vb</DependentUpon>
     </Compile>
@@ -127,6 +128,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AuditoriaAutori.resx">
+      <DependentUpon>AuditoriaAutori.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="autorizacionPres.resx">
       <DependentUpon>autorizacionPres.vb</DependentUpon>
     </EmbeddedResource>

@@ -6,6 +6,7 @@
     Public detalle_desc As String
     Public fecha As String
     Public usuario As String
+    Public estado_presup As String
 
     Public Sub New()
 
@@ -27,8 +28,13 @@
             MsgBox("Debe ingresar una breve descripcion de la accion elegida")
             Exit Sub
         End If
-        estado = "Autorizado"
+        If estado_presup = "Ingresado" Then
+            estado = "AF"
+        ElseIf estado_presup = "AF" Then
+            estado = "AG"
+        End If
         descripcion = txt_desc.Text
+        MsgBox("Se autoriza el presupuesto", MsgBoxStyle.OkOnly)
         Me.Close()
     End Sub
 
