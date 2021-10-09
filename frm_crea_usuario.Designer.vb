@@ -183,8 +183,10 @@ Partial Class frm_crea_usuario
         '
         Me.txt_conf_pass.Location = New System.Drawing.Point(342, 50)
         Me.txt_conf_pass.Name = "txt_conf_pass"
+        Me.txt_conf_pass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_conf_pass.Size = New System.Drawing.Size(100, 20)
         Me.txt_conf_pass.TabIndex = 6
+        Me.txt_conf_pass.UseSystemPasswordChar = True
         '
         'Label6
         '

@@ -17,13 +17,14 @@
         func.con_close()
         If dt.Rows.Count > 0 Then
             user = (dt.Rows(0)(1).ToString)
-            If dt.Rows(0)(0) = 1 Then
+            rol = (dt.Rows(0)(0).ToString)
+            If rol = 1 Then
                 frm_crea_usuario.ShowDialog()
                 Me.Close()
-            ElseIf dt.Rows(0)(0) = 0 Then
+            ElseIf rol = 0 Then
                 ingresoPresupuesto.ShowDialog()
                 Me.Close()
-            ElseIf dt.Rows(0)(0) = 2 Then
+            ElseIf rol = 2 Or rol = 3 Then
                 AuditoriaAutori.ShowDialog()
                 Me.Close()
             Else

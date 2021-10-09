@@ -32,6 +32,8 @@
             estado = "AF"
         ElseIf estado_presup = "AF" Then
             estado = "AG"
+        ElseIf estado_presup = "AG" Then
+            estado = "AA"
         End If
         descripcion = txt_desc.Text
         MsgBox("Se autoriza el presupuesto", MsgBoxStyle.OkOnly)
