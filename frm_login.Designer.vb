@@ -35,7 +35,7 @@ Partial Class frm_login
         Me.btn_ingresar.Name = "btn_ingresar"
         Me.btn_ingresar.Size = New System.Drawing.Size(113, 23)
         Me.btn_ingresar.TabIndex = 31
-        Me.btn_ingresar.Text = "Ingresar"
+        Me.btn_ingresar.Text = "Ingresar al sistema"
         Me.btn_ingresar.UseVisualStyleBackColor = True
         '
         'txt_password
